@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Time Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="mcontainer">
+        <header>
+            <h1>Welcome, <span id="user-name"></span>!</h1>
+            <p>This is your Time dashboard.</p>
+          </header>
+          
+          <main>
+            <!-- Local Time and Date -->
+            <section id="local-time">
+              <h2>Local Time</h2>
+              <p id="time">--:--:--</p>
+              <p id="date">-- --, ----</p>
+            </section>
+            
+            <!-- World Clock with Selectable Time Zones -->
+            <section id="world-clock">
+              <h2>World Clock</h2>
+              <div id="timezone-selector">
+                <label for="timezone">Select Time Zone:</label>
+                <select id="timezone">
+                  <option value="America/New_York">New York</option>
+                  <option value="Europe/London">London</option>
+                  <option value="Asia/Tokyo">Tokyo</option>
+                  <option value="Australia/Sydney">Sydney</option>
+                </select>
+                <button id="add-timezone">Add Time Zone</button>
+              </div>
+              <div id="selected-timezones"></div>
+            </section>
+        
+    </div>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
